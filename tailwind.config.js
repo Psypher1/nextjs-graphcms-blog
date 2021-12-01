@@ -15,5 +15,5 @@ module.exports = {
       Sora: ["Sora, sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
