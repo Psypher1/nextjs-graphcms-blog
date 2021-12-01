@@ -27,10 +27,10 @@ export default function Home() {
       <main>
         <PostCard />
         <Categories />
-        <h1 className="text-4xl">Home is a place in heaven</h1>
+        <h1 className="text-4xl uppercase">Home is a place in heaven</h1>
         {posts.map((post) => (
-          <article>
-            {post.title}
+          <article className="mt-5">
+            <h2 className="text-3xl font-semibold">{post.title}</h2>
             {post.excerpt}
           </article>
         ))}
