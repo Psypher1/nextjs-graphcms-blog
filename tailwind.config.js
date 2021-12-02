@@ -9,7 +9,21 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            color: "#fff",
+            a: {
+              color: "#3182ce",
+              "&:hover": {
+                color: "#2c5282",
+              },
+            },
+          },
+        },
+      },
+    },
     fontFamily: {
       Inter: ["Inter, sans-serif"],
       Sora: ["Sora, sans-serif"],

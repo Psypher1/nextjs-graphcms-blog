@@ -20,7 +20,7 @@ export default function Navbar() {
         </div>
         <ul className="hidden md:float-left md:contents">
           {categories.map((cat) => (
-            <Link href={`/category/${cat.slug}`}>
+            <Link href={`/category/${cat.slug}`} key={cat.slug}>
               <a className="md:float-right mt-2 ml-4 align-middle text-blue-100 font-semibold cursor-pointer text-xl ">
                 {cat.name}
               </a>
