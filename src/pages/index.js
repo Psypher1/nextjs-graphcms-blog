@@ -24,19 +24,19 @@ export default function Home({ posts }) {
         }}
       />
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-        <main className="col-span-1 lg:col-span-8">
+      <main className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <section className="col-span-1 lg:col-span-8">
           {posts.map((post) => (
             <PostCard post={post.node} key={post.node.title} />
           ))}
-        </main>
+        </section>
         <aside className="col-span-1 lg:col-span-4">
           <div className="relative top-8 lg:sticky">
             <PostWidget />
             <Categories />
           </div>
         </aside>
-      </div>
+      </main>
     </div>
   );
 }

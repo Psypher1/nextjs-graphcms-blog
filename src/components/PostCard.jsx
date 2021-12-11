@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function PostCard({ post }) {
   // console.log(post);
   return (
-    <article className="bg-white shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8">
+    <article className="bg-white shadow-lg rounded-lg p-4 lg:p-8 pb-12 mb-8">
       <div className="relative overflow-hidden shadow-md pb-80 mb-6 ">
         <img
           src={post.featuredImage.url}
@@ -53,7 +53,7 @@ export default function PostCard({ post }) {
       </p>
       <div className="text-center">
         <Link href={`/post/${post.slug}`}>
-          <a className="transition duration-500 ease transform hover:-translate-y-1 inline-block bg-blue-700 text-lg font-medium rounded-2xl text-blue-100 px-8 py-3 cursor-pointer">
+          <a className="transition duration-300 ease transform hover:-translate-y-1 inline-block bg-gray-900 text-lg font-medium rounded-2xl text-gray-100 px-8 py-3 cursor-pointer">
             Continue reading &rarr;
           </a>
         </Link>
