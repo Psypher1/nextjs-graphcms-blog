@@ -52,7 +52,7 @@ export default function PostCard({ post }) {
         {post.excerpt}
       </p>
       <div className="text-center">
-        <Link href={`/post/${post.slug}`}>
+        <Link href={`/posts/${post.slug}`}>
           <a className="transition duration-300 ease transform hover:-translate-y-1 inline-block bg-gray-900 text-lg font-medium rounded-2xl text-gray-100 px-8 py-3 cursor-pointer">
             Continue reading &rarr;
           </a>

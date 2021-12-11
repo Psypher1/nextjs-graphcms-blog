@@ -44,24 +44,25 @@ export async function getSinglePost(slug) {
     query GetSinglePost($slug: String!) {
       post(where: { slug: $slug }) {
         title
-        export
+        excerpt
         featuredImage {
           url
         }
         author {
-          bio
           name
+          bio
           photo {
             url
           }
         }
         createdAt
+        slug
+        body {
+          raw
+        }
         categories {
           name
           slug
-        }
-        body {
-          raw
         }
       }
     }
